@@ -18,6 +18,9 @@ use App\Http\Controllers\RpwsisAccomplishmentController;
 use App\Http\Controllers\DataTableImportController;
 
 
+Route::get('/phpinfo-test', function () {
+       phpinfo();
+   });
 // Authentication Routes
 Route::get('/', [AuthController::class, 'showLogin'])->name('login');
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
