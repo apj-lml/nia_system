@@ -478,7 +478,7 @@ class AdminController extends Controller
             'password' => $validated['password'],
             'role' => $validated['role'],
             'is_active' => true,
-            'email_verified_at' => null,
+            'email_verified_at' => now(),
             'agreed_to_terms' => $isAdmin,
         ]);
 
